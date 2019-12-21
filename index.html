@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b5165fc12a.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <title>Calendar Card</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="first">
+            <div class="overlay">
+                <ul class="nav-bar-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <input type="search" id="search-bar">
+                <nav class="navbar">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-search"></i>
+                </nav>
+                <p class="greeting">Good Morning!</p>
+                <div class="messi">
+                    <div class="notification"><span class="num">3</span></div>
+                </div>
+                <div class="months">
+                    <i class="fas fa-angle-left"></i>
+                    <p><time id="thisMonth">December</time></p>
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+        <section class="second">
+            <ul id="days">
+                <li>sun</li>
+                <li>mon</li>
+                <li>tue</li>
+                <li>wed</li>
+                <li>thu</li>
+                <li>fri</li>
+                <li>sat</li>
+            </ul>
+            <ul id="numbers"></ul>
+            <hr>
+        </section>
+        <section class="third hide" id="third">
+            <div class="toDo">
+                <img src="2.jpg" alt="ballon d'or">
+                <div class="detailsContainer">
+                    <p>Getting my 6th ballon d'or</p>
+                    <time datetime="19:00">7 - 9pm</time>
+                </div>
+            </div>
+            <hr>
+            <div class="toDo">
+                <img src="3.jpg" alt="ballon d'or">
+                <div class="detailsContainer">
+                    <p>Listening to music</p>
+                    <time datetime="11:00">11 - 12am Hangout</time>
+                </div>
+            </div>
+            <hr>
+            <div class="toDo">
+                <img src="4.jpg" alt="ballon d'or">
+                <div class="detailsContainer">
+                    <p>Lunch with Ronaldo</p>
+                    <time datetime="14:00">2pm Restaurant</time>
+                </div>
+            </div>
+        </section>
+        <button class="add"><i class="fas fa-plus"></i></button>
+    </div>
+</body>
+
+</html>

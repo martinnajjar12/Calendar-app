@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 85%;
+    max-width: 350px;
+    min-height: 650px;
+    margin: 7px auto auto auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-bar-links {
+    position: fixed;
+    background: #ff0050;
+    list-style: none;
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(0px at 15px 15px);
+    -webkit-clip-path: circle(0 at 30px 30px);
+    transition: all 0.8s ease-in-out;
+    z-index: 20;
+}
+
+.nav-bar-links li {
+    margin: 20px;
+}
+
+.nav-bar-links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar-links a:hover {
+    color: #97082B;
+}
+
+.nav-bar-show {
+    clip-path: circle(750px at 30px 30px) !important;
+    -webkit-clip-path: circle(750px at 30px 30px) !important;
+    transition: all 0.8s ease-in-out;
+}
+
+.fa-bars {
+    z-index: 25 !important;
+}
+
+.first {
+    background: url(bg.jpg) center/cover no-repeat;
+    height: 20em;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.first .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.greeting {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-size: 30px;
+}
+
+.messi {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background: url(1.jpg) center/cover no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.notification {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #45BDE1;
+    text-align: center;
+    float: right;
+    line-height: 25px;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fas {
+    transform: scale(1.5);
+    margin: 15px 20px 0 20px;
+}
+
+.fas:hover {
+    color: #97082B;
+    cursor: pointer;
+}
+
+#search-bar {
+    margin: 10px 0 0 0;
+    height: 25px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background: rgba(250, 250, 250, 0.3);
+    transform: translateX(195px);
+    transition: 0.5s transform ease-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.show-search-bar {
+    transform: translateX(0) !important;
+}
+
+.months {
+    width: 100%;
+    height: auto;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5px;
+    /* To center them vertically */
+    line-height: 40px;
+}
+
+.second ul {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto 0 auto;
+}
+
+.second li {
+    text-transform: uppercase;
+    list-style: none;
+    color: #ccc;
+    font-size: 14px;
+}
+
+#numbers li {
+    width: 35px;
+    height: 35px;
+    color: black;
+    border-radius: 50%;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#numbers li:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+#numbers .active {
+    background-color: #f0f0f0;
+}
+
+#numbers li .hasContent {
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 2px 0 0 0;
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+    pointer-events: none;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 0.8s ease-in;
+}
+
+.toDo {
+    display: flex;
+}
+
+.toDo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.toDo .detailsContainer {
+    margin: 10px;
+}
+
+.toDo p {
+    margin: 0 0 10px 0;
+}
+
+.toDo time {
+    color: #ccc;
+}
+
+.add {
+    border-radius: 50%;
+    background-color: #FC3768;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.add i {
+    margin: 0 auto;
+}
